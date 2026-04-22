@@ -45,14 +45,31 @@
 """
 
 import re
+import sys
 import copy
 import json
 import shutil
 import pathlib
+import datetime
 import collections
 
 import openpyxl
 from docx import Document
+
+# ── Windows UTF-8 控制台兼容 ──────────────────────────────────────────────────
+# Windows cmd 默认编码为 GBK（CP936），无法输出 ✓ ✗ → 等 Unicode 符号，
+# 会触发 UnicodeEncodeError。强制将 stdout/stderr 切换到 UTF-8 模式。
+if sys.platform == "win32":
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+    except AttributeError:
+        # Python < 3.7 fallback
+        import io
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8",
+                                      errors="replace")
+        sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8",
+                                      errors="replace")
 
 # ── 路径 ──────────────────────────────────────────────────────────────────────
 ROOT   = pathlib.Path(__file__).parent.parent
@@ -212,7 +229,7 @@ _FIELDS_EXP2 = ["GDP总量（亿元）", "常住人口（万）", "人均GDP（�
 
 
 def _extract_city_fields(para_text: str) -> dict:
-    """
+    r"""
     朴素单位匹配（不处理千位逗号，直接用 [\d.]+ 提取数字片段）
 
     失败根因：原文使用千位逗号分隔（如 56,708.71 亿元），正则 [\d.]+ 在遇到
