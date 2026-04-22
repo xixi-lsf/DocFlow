@@ -1,0 +1,385 @@
+{
+  "experiment": "exp2_docx_xlsx",
+  "input_file": "测试集/包含模板文件/2025年中国城市经济百强全景报告/2025年中国城市经济百强全景报告.docx",
+  "template": "测试集/包含模板文件/2025年中国城市经济百强全景报告/2025年中国城市经济百强全景报告-模板.xlsx",
+  "output": "baseline/output/exp2_filled.xlsx",
+  "records": [
+    {
+      "city": "上海",
+      "fields": [
+        {
+          "field": "GDP总量（亿元）",
+          "ground_truth": 56708.71,
+          "extracted": 708.71,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "常住人口（万）",
+          "ground_truth": 2487.45,
+          "extracted": 487.45,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "人均GDP（元）",
+          "ground_truth": 228020.0,
+          "extracted": 20.0,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "一般公共预算收入（亿元）",
+          "ground_truth": 8500.91,
+          "extracted": 8.0,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        }
+      ]
+    },
+    {
+      "city": "北京",
+      "fields": [
+        {
+          "field": "GDP总量（亿元）",
+          "ground_truth": 52073.4,
+          "extracted": 73.4,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "常住人口（万）",
+          "ground_truth": 2185.3,
+          "extracted": 185.3,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "人均GDP（元）",
+          "ground_truth": 238320.0,
+          "extracted": 320.0,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "一般公共预算收入（亿元）",
+          "ground_truth": 6680.6,
+          "extracted": 6.0,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        }
+      ]
+    },
+    {
+      "city": "深圳",
+      "fields": [
+        {
+          "field": "GDP总量（亿元）",
+          "ground_truth": 38731.8,
+          "extracted": 731.8,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "常住人口（万）",
+          "ground_truth": 1779.05,
+          "extracted": 779.05,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "人均GDP（元）",
+          "ground_truth": 217710.0,
+          "extracted": 710.0,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "一般公共预算收入（亿元）",
+          "ground_truth": 4163.8,
+          "extracted": 4.0,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        }
+      ]
+    },
+    {
+      "city": "重庆",
+      "fields": [
+        {
+          "field": "GDP总量（亿元）",
+          "ground_truth": 33757.93,
+          "extracted": 757.93,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "常住人口（万）",
+          "ground_truth": 3191.43,
+          "extracted": 191.43,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "人均GDP（元）",
+          "ground_truth": 105790.0,
+          "extracted": 790.0,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "一般公共预算收入（亿元）",
+          "ground_truth": 2735.8,
+          "extracted": 2.0,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        }
+      ]
+    },
+    {
+      "city": "广州",
+      "fields": [
+        {
+          "field": "GDP总量（亿元）",
+          "ground_truth": 32039.46,
+          "extracted": 39.46,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "常住人口（万）",
+          "ground_truth": 1882.7,
+          "extracted": 882.7,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "人均GDP（元）",
+          "ground_truth": 170240.0,
+          "extracted": 240.0,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "一般公共预算收入（亿元）",
+          "ground_truth": 2184.8,
+          "extracted": 2.0,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        }
+      ]
+    },
+    {
+      "city": "苏州",
+      "fields": [
+        {
+          "field": "GDP总量（亿元）",
+          "ground_truth": 27695.1,
+          "extracted": 695.1,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "常住人口（万）",
+          "ground_truth": 1295.8,
+          "extracted": 295.8,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "人均GDP（元）",
+          "ground_truth": 213860.0,
+          "extracted": 860.0,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "一般公共预算收入（亿元）",
+          "ground_truth": 2490.23,
+          "extracted": 2.0,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        }
+      ]
+    },
+    {
+      "city": "成都",
+      "fields": [
+        {
+          "field": "GDP总量（亿元）",
+          "ground_truth": 24763.61,
+          "extracted": 763.61,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "常住人口（万）",
+          "ground_truth": 2140.5,
+          "extracted": 140.5,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "人均GDP（元）",
+          "ground_truth": 115710.0,
+          "extracted": 710.0,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "一般公共预算收入（亿元）",
+          "ground_truth": 2000.7,
+          "extracted": 2.0,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        }
+      ]
+    },
+    {
+      "city": "杭州",
+      "fields": [
+        {
+          "field": "GDP总量（亿元）",
+          "ground_truth": 23010.9,
+          "extracted": 10.9,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "常住人口（万）",
+          "ground_truth": 1252.3,
+          "extracted": 252.3,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "人均GDP（元）",
+          "ground_truth": 184080.0,
+          "extracted": 80.0,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "一般公共预算收入（亿元）",
+          "ground_truth": 2693.2,
+          "extracted": 2.0,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        }
+      ]
+    },
+    {
+      "city": "武汉",
+      "fields": [
+        {
+          "field": "GDP总量（亿元）",
+          "ground_truth": 22147.35,
+          "extracted": 147.35,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "常住人口（万）",
+          "ground_truth": 1377.2,
+          "extracted": 377.2,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "人均GDP（元）",
+          "ground_truth": 160830.0,
+          "extracted": 830.0,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "一般公共预算收入（亿元）",
+          "ground_truth": 1635.4,
+          "extracted": 1.0,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        }
+      ]
+    },
+    {
+      "city": "南京",
+      "fields": [
+        {
+          "field": "GDP总量（亿元）",
+          "ground_truth": 19428.78,
+          "extracted": 428.78,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "常住人口（万）",
+          "ground_truth": 950.6,
+          "extracted": 950.6,
+          "hit": true,
+          "correct": true,
+          "error_type": "correct"
+        },
+        {
+          "field": "人均GDP（元）",
+          "ground_truth": 204510.0,
+          "extracted": 510.0,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        },
+        {
+          "field": "一般公共预算收入（亿元）",
+          "ground_truth": 1620.9,
+          "extracted": 1.0,
+          "hit": true,
+          "correct": false,
+          "error_type": "comma_truncation"
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "field_hit_rate": 1.0,
+    "field_accuracy": 0.025,
+    "city_e2e_accuracy": 0.0,
+    "error_comma_trunc": 39,
+    "error_miss": 0
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "experiment": "exp3_xlsx_docx",
+  "data_file": "测试集/包含模板文件/2025山东省环境空气质量监测数据信息/山东省环境空气质量监测数据信息202512171921_0.xlsx",
+  "req_file": "测试集/包含模板文件/2025山东省环境空气质量监测数据信息/用户要求.txt",
+  "template": "测试集/包含模板文件/2025山东省环境空气质量监测数据信息/2025山东省环境空气质量监测数据信息-模板.docx",
+  "output": "baseline/output/exp3_filled.docx",
+  "correct_assignment": {
+    "0": "德州市",
+    "1": "潍坊市",
+    "2": "临沂市"
+  },
+  "baseline_assignment": {
+    "0": "临沂市",
+    "1": "德州市",
+    "2": "潍坊市"
+  },
+  "tables": [
+    {
+      "table_index": 0,
+      "correct_city": "德州市",
+      "baseline_city": "临沂市",
+      "assignment_correct": false,
+      "rows_needed": 25,
+      "rows_filled": 24,
+      "cells_total": 200,
+      "cells_correct": 38,
+      "cell_accuracy": 0.19
+    },
+    {
+      "table_index": 1,
+      "correct_city": "潍坊市",
+      "baseline_city": "德州市",
+      "assignment_correct": false,
+      "rows_needed": 29,
+      "rows_filled": 25,
+      "cells_total": 232,
+      "cells_correct": 39,
+      "cell_accuracy": 0.1681
+    },
+    {
+      "table_index": 2,
+      "correct_city": "临沂市",
+      "baseline_city": "潍坊市",
+      "assignment_correct": false,
+      "rows_needed": 25,
+      "rows_filled": 25,
+      "cells_total": 200,
+      "cells_correct": 36,
+      "cell_accuracy": 0.18
+    }
+  ],
+  "metrics": {
+    "table_assignment_accuracy": 0.0,
+    "cell_accuracy": 0.1788,
+    "row_fill_rate": 0.9367
+  }
+}

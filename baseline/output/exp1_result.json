@@ -1,0 +1,61 @@
+{
+  "experiment": "exp1_txt_regex",
+  "input_file": "测试集/txt/合肥市2024年国民经济和社会发展统计公报.txt",
+  "fields": [
+    {
+      "field": "GDP总量（亿元）",
+      "ground_truth": 13507.69,
+      "extracted": null,
+      "hit": false,
+      "correct": false,
+      "error_type": "miss_newline_or_footnote"
+    },
+    {
+      "field": "GDP增速（%）",
+      "ground_truth": 6.1,
+      "extracted": "6.1",
+      "hit": true,
+      "correct": true,
+      "error_type": "correct"
+    },
+    {
+      "field": "常住人口（万人）",
+      "ground_truth": 1000.2,
+      "extracted": "1000.2",
+      "hit": true,
+      "correct": true,
+      "error_type": "correct"
+    },
+    {
+      "field": "城镇化率（%）",
+      "ground_truth": 86.38,
+      "extracted": null,
+      "hit": false,
+      "correct": false,
+      "error_type": "miss_newline_or_footnote"
+    },
+    {
+      "field": "人均GDP（元）",
+      "ground_truth": 136063.0,
+      "extracted": null,
+      "hit": false,
+      "correct": false,
+      "error_type": "miss_newline_or_footnote"
+    },
+    {
+      "field": "城镇新增就业（万人）",
+      "ground_truth": 21.43,
+      "extracted": "21.43",
+      "hit": true,
+      "correct": true,
+      "error_type": "correct"
+    }
+  ],
+  "metrics": {
+    "field_hit_rate": 0.5,
+    "field_accuracy": 0.5,
+    "e2e_accuracy": 0,
+    "error_miss": 3,
+    "error_wrong_val": 0
+  }
+}
