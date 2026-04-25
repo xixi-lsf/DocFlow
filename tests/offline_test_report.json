@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-04-25T14:14:19.760553",
+  "mode": "offline",
+  "dataset": {
+    "source_files_found": 17,
+    "source_files_expected": 16,
+    "templates_found": 3,
+    "templates_expected": 5
+  },
+  "ground_truth": {
+    "covid_rows": 2542,
+    "shandong_rows": {
+      "德州市": 25,
+      "潍坊市": 29,
+      "临沂市": 25
+    },
+    "city_rows": 94
+  },
+  "checks": [
+    {
+      "scenario": "数据集完整性",
+      "passed": true,
+      "note": "17/17 数据源, 3/3 模板"
+    },
+    {
+      "scenario": "COVID-GT-Quality",
+      "passed": true,
+      "note": "标准答案最低字段覆盖率=87.0%, 行数=2542"
+    },
+    {
+      "scenario": "Shandong-GT-Quality",
+      "passed": true,
+      "note": "标准答案总行数=79"
+    },
+    {
+      "scenario": "City-GT-Quality",
+      "passed": true,
+      "note": "正则提取城市数=94"
+    },
+    {
+      "scenario": "Fuzzy-Baseline",
+      "passed": true,
+      "note": "difflib相似度=0.909"
+    }
+  ],
+  "predicted_accuracy": {
+    "covid_xlsx_exact_match_upper_bound_pct": 92.0,
+    "shandong_xlsx_exact_match_upper_bound_pct": 95.0,
+    "city_docx_fuzzy_match_upper_bound_pct": 92.0
+  },
+  "predicted_response_time": {
+    "file_io_avg_ms": 8.0,
+    "estimated_total_s_range": "5-45",
+    "target_single_s": 90,
+    "target_avg_s": 15
+  }
+}
